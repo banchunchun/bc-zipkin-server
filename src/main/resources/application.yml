@@ -1,0 +1,4 @@
+eureka:
+  instance:
+    metadata-map:
+      cluster: BC-ZIPKIN-SERVER
