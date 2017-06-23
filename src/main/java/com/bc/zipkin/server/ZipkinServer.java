@@ -3,7 +3,7 @@ package com.bc.zipkin.server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
+import zipkin.server.EnableZipkinServer;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,7 +15,7 @@ import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
  */
 @SpringBootApplication
 @EnableDiscoveryClient //注册到eureka
-@EnableZipkinStreamServer //使用Stream方式启动ZipkinServer
+@EnableZipkinServer
 public class ZipkinServer {
 
 
